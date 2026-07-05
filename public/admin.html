@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mines — Admin Pix</title>
+<style>
+  :root{
+    --bg:#070a14; --bg-2:#0c1326; --glass:rgba(13,19,38,.7);
+    --line:#1d2742; --text:#e8eefc; --muted:#7686a8;
+    --cyan:#00e0ff; --violet:#7c5cff; --danger:#ff3b5c; --ok:#1fbf6f;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--text);
+    font-family:'Inter',Arial,sans-serif; padding:24px;
+  }
+  .wrap{ max-width:720px; margin:0 auto; }
+  h1{ font-size:20px; margin:0 0 4px; }
+  .sub{ color:var(--muted); font-size:13px; margin:0 0 24px; }
+
+  .token-box{
+    background:var(--glass); border:1px solid var(--line); border-radius:12px;
+    padding:16px; margin-bottom:24px; display:flex; gap:10px; align-items:center;
+  }
+  .token-box input{
+    flex:1; padding:10px 12px; border-radius:8px; border:1px solid var(--line);
+    background:var(--bg); color:var(--text); font-size:13px; outline:none;
+    font-family:'JetBrains Mono',monospace;
+  }
+  .token-box button{
+    padding:10px 16px; border:none; border-radius:8px; background:var(--cyan);
+    color:#011016; font-weight:700; cursor:pointer; white-space:nowrap;
+  }
+  .token-status{ font-size:12px; margin-top:8px; }
+  .token-status.ok{ color:var(--ok); }
+  .token-status.err{ color:var(--danger); }
+
+  .section-title{
+    font-size:12px; text-transform:uppercase; letter-spacing:.06em;
+    color:var(--muted); margin:24px 0 10px;
+  }
+
+  .empty{
+    color:var(--muted); font-size:13px; padding:16px; text-align:center;
+    background:var(--glass); border:1px solid var(--line); border-radius:12px;
+  }
+
+  .req-card{
+    background:var(--glass); border:1px solid var(--line); border-radius:12px;
+    padding:14px 16px; margin-bottom:10px;
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+  }
+  .req-info{ font-size:13px; }
+  .req-info .user{ font-weight:700; }
+  .req-info .meta{ color:var(--muted); font-size:11.5px; margin-top:2px; font-family:'JetBrains Mono',monospace; }
+  .req-actions{ display:flex; gap:8px; flex-shrink:0; }
+  .req-actions button{
+    border:none; border-radius:8px; padding:8px 14px; font-weight:700;
+    font-size:12.5px; cursor:pointer;
+  }
+  .btn-confirm{ background:var(--ok); color:#04190e; }
+  .btn-reject{ background:var(--danger); color:#fff; }
+  .req-actions button:disabled{ opacity:.5; cursor:default; }
+
+  .badge{
+    font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:5px;
+    text-transform:uppercase;
+  }
+  .badge.confirmed{ background:rgba(31,191,111,.15); color:var(--ok); }
+  .badge.rejected{ background:rgba(255,59,92,.15); color:var(--danger); }
+
+  .refresh-row{ display:flex; justify-content:space-between; align-items:center; margin-top:24px; }
+  .refresh-row button{
+    background:none; border:1px solid var(--line); color:var(--text);
+    padding:8px 14px; border-radius:8px; cursor:pointer; font-size:12.5px;
+  }
+  .auto-note{ color:var(--muted); font-size:11.5px; }
+
+  .hidden{ display:none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Painel Pix — Mines</h1>
+  <p class="sub">Confirme ou rejeite solicitações de recarga depois de checar seu extrato Pix.</p>
+
+  <div class="token-box">
+    <input id="token-input" type="password" placeholder="Cole seu ADMIN_TOKEN aqui" autocomplete="off">
+    <button onclick="saveToken()">Entrar</button>
+  </div>
+  <div class="token-status" id="token-status"></div>
+
+  <div id="content" class="hidden">
+    <div class="section-title">Pendentes</div>
+    <div id="pending-list"></div>
+
+    <div class="section-title">Recentes (confirmadas / rejeitadas)</div>
+    <div id="recent-list"></div>
+
+    <div class="refresh-row">
+      <button onclick="loadData()">Atualizar agora</button>
+      <span class="auto-note">Atualiza sozinho a cada 15s</span>
+    </div>
+  </div>
+</div>
+
+<script>
+let ADMIN_TOKEN = "";
+let autoTimer = null;
+
+function saveToken(){
+  const val = document.getElementById("token-input").value.trim();
+  if(!val){ return; }
+  ADMIN_TOKEN = val;
+  loadData();
+}
+
+function setTokenStatus(text, kind){
+  const el = document.getElementById("token-status");
+  el.innerText = text;
+  el.className = "token-status" + (kind ? " " + kind : "");
+}
+
+async function apiCall(path, method){
+  const r = await fetch(path, {
+    method: method || "GET",
+    headers: { "x-admin-token": ADMIN_TOKEN }
+  });
+  const data = await r.json().catch(() => ({}));
+  if(!r.ok){
+    throw new Error(data.error || ("Erro " + r.status));
+  }
+  return data;
+}
+
+async function loadData(){
+  if(!ADMIN_TOKEN){ return; }
+  try{
+    const data = await apiCall("/api/admin/topups");
+    setTokenStatus("Conectado.", "ok");
+    document.getElementById("content").classList.remove("hidden");
+    renderPending(data.pending || []);
+    renderRecent(data.recent || []);
+
+    if(!autoTimer){
+      autoTimer = setInterval(loadData, 15000);
+    }
+  }catch(e){
+    setTokenStatus(e.message, "err");
+    document.getElementById("content").classList.add("hidden");
+    if(autoTimer){ clearInterval(autoTimer); autoTimer = null; }
+  }
+}
+
+function renderPending(list){
+  const el = document.getElementById("pending-list");
+  if(!list.length){
+    el.innerHTML = `<div class="empty">Nenhuma solicitação pendente.</div>`;
+    return;
+  }
+  el.innerHTML = list.map(r => `
+    <div class="req-card">
+      <div class="req-info">
+        <div class="user">${escapeHtml(r.username)} — ${r.amount} pts</div>
+        <div class="meta">id: ${r.id}<br>solicitado em: ${formatDate(r.createdAt)}</div>
+      </div>
+      <div class="req-actions">
+        <button class="btn-confirm" onclick="confirmRequest('${r.id}', this)">Confirmar</button>
+        <button class="btn-reject" onclick="rejectRequest('${r.id}', this)">Rejeitar</button>
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderRecent(list){
+  const el = document.getElementById("recent-list");
+  if(!list.length){
+    el.innerHTML = `<div class="empty">Nada por aqui ainda.</div>`;
+    return;
+  }
+  el.innerHTML = list.map(r => `
+    <div class="req-card">
+      <div class="req-info">
+        <div class="user">${escapeHtml(r.username)} — ${r.amount} pts</div>
+        <div class="meta">${formatDate(r.confirmedAt || r.rejectedAt || r.createdAt)}</div>
+      </div>
+      <span class="badge ${r.status}">${r.status === "confirmed" ? "Confirmado" : "Rejeitado"}</span>
+    </div>
+  `).join("");
+}
+
+async function confirmRequest(id, btn){
+  btn.disabled = true;
+  try{
+    await apiCall(`/api/admin/topups/${id}/confirm`, "POST");
+    loadData();
+  }catch(e){
+    alert("Erro ao confirmar: " + e.message);
+    btn.disabled = false;
+  }
+}
+
+async function rejectRequest(id, btn){
+  btn.disabled = true;
+  try{
+    await apiCall(`/api/admin/topups/${id}/reject`, "POST");
+    loadData();
+  }catch(e){
+    alert("Erro ao rejeitar: " + e.message);
+    btn.disabled = false;
+  }
+}
+
+function formatDate(iso){
+  if(!iso) return "-";
+  const d = new Date(iso);
+  return d.toLocaleString("pt-BR");
+}
+
+function escapeHtml(str){
+  const div = document.createElement("div");
+  div.innerText = str;
+  return div.innerHTML;
+}
+</script>
+</body>
+</html>

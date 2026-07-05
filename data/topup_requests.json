@@ -1,0 +1,106 @@
+[
+  {
+    "id": "a2face2a-9c86-4680-823b-f4633a95d1ec",
+    "username": "italo",
+    "amount": 50,
+    "status": "rejected",
+    "createdAt": "2026-06-21T07:15:35.130Z",
+    "rejectedAt": "2026-06-21T07:16:02.230Z"
+  },
+  {
+    "id": "492aee67-9f5a-40ff-b68b-d17e47509b07",
+    "username": "italo",
+    "amount": 25,
+    "status": "confirmed",
+    "createdAt": "2026-06-30T04:30:29.991Z",
+    "confirmedAt": "2026-06-30T04:31:03.170Z"
+  },
+  {
+    "id": "9e0a2724-1c30-4da9-9aa3-6a849dca0f15",
+    "username": "16831274471",
+    "amount": 10,
+    "status": "confirmed",
+    "createdAt": "2026-07-01T02:16:41.042Z",
+    "confirmedAt": "2026-07-01T02:17:04.717Z"
+  },
+  {
+    "id": "828baedc-f594-4df6-8d9d-ea0133530809",
+    "username": "16831274471",
+    "amount": 20,
+    "status": "confirmed",
+    "createdAt": "2026-07-01T08:11:27.504Z",
+    "confirmedAt": "2026-07-01T08:11:58.223Z"
+  },
+  {
+    "id": "2871cd82-4274-46e0-b811-02a83c1c084e",
+    "username": "16831274471",
+    "amount": 10,
+    "status": "confirmed",
+    "createdAt": "2026-07-01T08:13:51.890Z",
+    "confirmedAt": "2026-07-01T08:14:00.198Z"
+  },
+  {
+    "id": "37a604bc-fd31-4fbf-916b-735838360e2c",
+    "username": "16831274471",
+    "amount": 10,
+    "status": "confirmed",
+    "createdAt": "2026-07-01T08:14:14.322Z",
+    "confirmedAt": "2026-07-01T08:14:25.218Z"
+  },
+  {
+    "id": "9fb5d543-b213-4e0a-866f-2672fdb6ac08",
+    "username": "04925280473",
+    "amount": 25,
+    "status": "confirmed",
+    "createdAt": "2026-07-02T01:53:34.536Z",
+    "confirmedAt": "2026-07-02T01:54:03.465Z"
+  },
+  {
+    "id": "6b46a69b-8491-4ad1-8734-6aefde0fee41",
+    "username": "04925280473",
+    "amount": 25,
+    "status": "confirmed",
+    "createdAt": "2026-07-02T01:53:35.961Z",
+    "confirmedAt": "2026-07-02T01:54:02.584Z"
+  },
+  {
+    "id": "b3eac099-dafd-4129-9fe2-6e57a1afbbe5",
+    "username": "04925280473",
+    "amount": 25,
+    "status": "confirmed",
+    "createdAt": "2026-07-02T01:53:40.718Z",
+    "confirmedAt": "2026-07-02T01:54:01.438Z"
+  },
+  {
+    "id": "ba479887-ff62-43b8-9a11-35fa83468778",
+    "username": "04925280473",
+    "amount": 25,
+    "status": "confirmed",
+    "createdAt": "2026-07-02T01:53:41.410Z",
+    "confirmedAt": "2026-07-02T01:54:00.470Z"
+  },
+  {
+    "id": "f6708343-8d95-4421-bda0-47e8876ee254",
+    "username": "16831274471",
+    "amount": 20,
+    "status": "confirmed",
+    "createdAt": "2026-07-02T02:02:05.430Z",
+    "confirmedAt": "2026-07-02T02:02:12.001Z"
+  },
+  {
+    "id": "b38b2697-cdae-449a-85d9-4eca05aa5d6f",
+    "username": "16989123400",
+    "amount": 20,
+    "status": "confirmed",
+    "createdAt": "2026-07-04T01:15:40.757Z",
+    "confirmedAt": "2026-07-04T01:15:53.718Z"
+  },
+  {
+    "id": "6e414b9d-5c7a-4b19-b0b2-c36f12a55612",
+    "username": "16831274471",
+    "amount": 20,
+    "status": "confirmed",
+    "createdAt": "2026-07-04T01:20:32.753Z",
+    "confirmedAt": "2026-07-04T01:20:39.837Z"
+  }
+]

@@ -1,0 +1,582 @@
+{
+  "16831274471": {
+    "passwordHash": "ca54f259542836b12da16d6d12b51061:762974f68dd4bdd694e41f3443da57e2b73d5a8d4eedb624ddce6815be5e547ba164e0f53e98ea2084777026fee3c21baf7c5f7a13988d43325854a3aa10aad7",
+    "bonusBalance": 0,
+    "winningsBalance": 0.33,
+    "totalGamesPlayed": 0,
+    "wageredSinceLastWithdraw": 950,
+    "lastWithdrawAt": null,
+    "dailyActivity": {
+      "2026-06-30": {
+        "wagered": 217,
+        "games": 24
+      },
+      "2026-07-01": {
+        "wagered": 713,
+        "games": 13
+      },
+      "2026-07-03": {
+        "wagered": 20,
+        "games": 4
+      }
+    },
+    "accountCreatedAt": "2026-07-01T01:30:58.300Z",
+    "history": [],
+    "depositCount": 0,
+    "totalDeposited": 0,
+    "lastDailyReset": "2026-07-04"
+  },
+  "04925280473": {
+    "passwordHash": "9d50eea88964afee3be1a385e156fb59:c694f76988cb8ac1df04869931e74c72701c5bb6f60689abec59629cff52a998ee34190f92c1c93c8c1f013d211e822fd333b15e4ca1fb00cd079a4aa327c585",
+    "bonusBalance": 0,
+    "winningsBalance": 51.77,
+    "totalGamesPlayed": 29,
+    "wageredSinceLastWithdraw": 281,
+    "lastWithdrawAt": null,
+    "dailyActivity": {
+      "2026-07-01": {
+        "wagered": 281,
+        "games": 29
+      }
+    },
+    "accountCreatedAt": "2026-07-02T01:48:49.731Z",
+    "history": [
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 6,
+        "boardSize": "5x4",
+        "multiplier": "0.43",
+        "payout": 0,
+        "at": "2026-07-02T01:49:36.344Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 6,
+        "boardSize": "5x4",
+        "multiplier": "0.61",
+        "payout": 0,
+        "at": "2026-07-02T01:49:57.728Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 6,
+        "boardSize": "5x4",
+        "multiplier": "0.00",
+        "payout": 0,
+        "at": "2026-07-02T01:50:20.660Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 6,
+        "boardSize": "5x4",
+        "multiplier": "0.86",
+        "payout": 0,
+        "at": "2026-07-02T01:50:32.551Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 6,
+        "boardSize": "5x4",
+        "multiplier": "0.61",
+        "payout": 0,
+        "at": "2026-07-02T01:50:41.397Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.50",
+        "payout": 0,
+        "at": "2026-07-02T01:50:46.392Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-02T01:51:02.181Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-02T01:51:07.247Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 15.66,
+        "at": "2026-07-02T01:51:27.460Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.59",
+        "payout": 5.88,
+        "at": "2026-07-02T01:51:37.588Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-02T01:51:55.803Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.02",
+        "payout": 10.18,
+        "at": "2026-07-02T01:52:26.225Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.59",
+        "payout": 0,
+        "at": "2026-07-02T01:52:31.551Z"
+      },
+      {
+        "result": "loss",
+        "bet": 1,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "2.59",
+        "payout": 0,
+        "at": "2026-07-02T01:53:00.424Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 19,
+        "boardSize": "5x4",
+        "multiplier": "0.15",
+        "payout": 0,
+        "at": "2026-07-02T01:54:41.392Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 10,
+        "boardSize": "5x4",
+        "multiplier": "2.33",
+        "payout": 23.34,
+        "at": "2026-07-02T01:55:05.269Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 5,
+        "boardSize": "4x4",
+        "multiplier": "0.63",
+        "payout": 0,
+        "at": "2026-07-02T01:55:52.663Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 5,
+        "boardSize": "4x4",
+        "multiplier": "0.92",
+        "payout": 0,
+        "at": "2026-07-02T01:56:02.184Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 5,
+        "boardSize": "4x4",
+        "multiplier": "3.66",
+        "payout": 36.63,
+        "at": "2026-07-02T01:56:12.730Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 5,
+        "boardSize": "4x4",
+        "multiplier": "0.44",
+        "payout": 0,
+        "at": "2026-07-02T01:58:01.993Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x5",
+        "multiplier": "1.41",
+        "payout": 0,
+        "at": "2026-07-02T01:58:41.902Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x5",
+        "multiplier": "0.86",
+        "payout": 0,
+        "at": "2026-07-02T01:58:58.312Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x5",
+        "multiplier": "0.50",
+        "payout": 0,
+        "at": "2026-07-02T01:59:02.224Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x5",
+        "multiplier": "2.05",
+        "payout": 20.54,
+        "at": "2026-07-02T01:59:22.507Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x5",
+        "multiplier": "2.05",
+        "payout": 20.54,
+        "at": "2026-07-02T01:59:48.590Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x5",
+        "multiplier": "1.41",
+        "payout": 0,
+        "at": "2026-07-02T02:00:02.725Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.00",
+        "payout": 0,
+        "at": "2026-07-02T02:00:39.783Z"
+      }
+    ],
+    "depositCount": 4,
+    "totalDeposited": 100,
+    "lastDailyReset": "2026-07-01"
+  },
+  "16989123400": {
+    "passwordHash": "778ba183ad5cf7b89a64b6f83ceedfc9:e7ee5b9417aa3bb74470217ffa835d77776cb6d02b52dc81937a16a2aed079310c1d865ab8a5fa72d285eebbdf64629e17d335360efdcb515a2c0610b1efa9fa",
+    "bonusBalance": 0,
+    "winningsBalance": 1.47,
+    "totalGamesPlayed": 31,
+    "wageredSinceLastWithdraw": 267,
+    "lastWithdrawAt": null,
+    "dailyActivity": {
+      "2026-07-03": {
+        "wagered": 267,
+        "games": 31
+      }
+    },
+    "accountCreatedAt": "2026-07-04T01:11:50.092Z",
+    "history": [
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-04T01:12:20.563Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.00",
+        "payout": 0,
+        "at": "2026-07-04T01:12:32.749Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 15.66,
+        "at": "2026-07-04T01:12:46.060Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 15.66,
+        "at": "2026-07-04T01:12:53.534Z"
+      },
+      {
+        "result": "win",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 15.66,
+        "at": "2026-07-04T01:13:02.035Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.59",
+        "payout": 0,
+        "at": "2026-07-04T01:13:06.130Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.99",
+        "payout": 0,
+        "at": "2026-07-04T01:13:10.432Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.50",
+        "payout": 0,
+        "at": "2026-07-04T01:13:12.953Z"
+      },
+      {
+        "result": "loss",
+        "bet": 10,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.70",
+        "payout": 0,
+        "at": "2026-07-04T01:13:23.035Z"
+      },
+      {
+        "result": "loss",
+        "bet": 15,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.50",
+        "payout": 0,
+        "at": "2026-07-04T01:13:34.257Z"
+      },
+      {
+        "result": "win",
+        "bet": 15,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 23.49,
+        "at": "2026-07-04T01:13:43.418Z"
+      },
+      {
+        "result": "loss",
+        "bet": 15,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.59",
+        "payout": 0,
+        "at": "2026-07-04T01:13:46.687Z"
+      },
+      {
+        "result": "loss",
+        "bet": 15,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.25",
+        "payout": 0,
+        "at": "2026-07-04T01:13:51.192Z"
+      },
+      {
+        "result": "win",
+        "bet": 15,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 23.49,
+        "at": "2026-07-04T01:14:01.738Z"
+      },
+      {
+        "result": "loss",
+        "bet": 15,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.25",
+        "payout": 0,
+        "at": "2026-07-04T01:14:09.315Z"
+      },
+      {
+        "result": "loss",
+        "bet": 12,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.70",
+        "payout": 0,
+        "at": "2026-07-04T01:14:16.899Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.50",
+        "payout": 0,
+        "at": "2026-07-04T01:16:48.343Z"
+      },
+      {
+        "result": "win",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 7.83,
+        "at": "2026-07-04T01:16:58.454Z"
+      },
+      {
+        "result": "win",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.57",
+        "payout": 7.83,
+        "at": "2026-07-04T01:17:06.152Z"
+      },
+      {
+        "result": "win",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "2.59",
+        "payout": 12.95,
+        "at": "2026-07-04T01:17:28.700Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.00",
+        "payout": 0,
+        "at": "2026-07-04T01:18:02.271Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-04T01:18:31.269Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.70",
+        "payout": 0,
+        "at": "2026-07-04T01:18:34.950Z"
+      },
+      {
+        "result": "win",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "2.59",
+        "payout": 12.95,
+        "at": "2026-07-04T01:18:39.767Z"
+      },
+      {
+        "result": "win",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "2.59",
+        "payout": 12.95,
+        "at": "2026-07-04T01:18:58.251Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-04T01:19:03.713Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "1.25",
+        "payout": 0,
+        "at": "2026-07-04T01:19:07.131Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.50",
+        "payout": 0,
+        "at": "2026-07-04T01:19:09.651Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.84",
+        "payout": 0,
+        "at": "2026-07-04T01:19:15.078Z"
+      },
+      {
+        "result": "loss",
+        "bet": 5,
+        "bombs": 3,
+        "boardSize": "5x4",
+        "multiplier": "0.59",
+        "payout": 0,
+        "at": "2026-07-04T01:19:17.351Z"
+      }
+    ],
+    "depositCount": 1,
+    "totalDeposited": 20,
+    "lastDailyReset": "2026-07-03"
+  }
+}
