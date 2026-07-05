@@ -9,7 +9,7 @@ const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 const TOPUPS_FILE = path.join(__dirname, "data", "topup_requests.json");
 
